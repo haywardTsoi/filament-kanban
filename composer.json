@@ -42,8 +42,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Solutionforest\\FilamentKanban\\": "src/",
-            "Solutionforest\\FilamentKanban\\Database\\Factories\\": "database/factories/"
+            "Solutionforest\\FilamentKanban\\": "src/"
         }
     },
     "autoload-dev": {
@@ -78,6 +77,6 @@
             "phpstan/extension-installer": true
         }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "beta",
     "prefer-stable": true
 }
