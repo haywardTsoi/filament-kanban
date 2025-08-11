@@ -112,7 +112,7 @@ class FilamentKanbanServiceProvider extends PackageServiceProvider
     protected function getCommands(): array
     {
         return [
-            FilamentKanbanCommand::class,
+            // FilamentKanbanCommand::class,
         ];
     }
 
