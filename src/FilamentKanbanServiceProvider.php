@@ -77,13 +77,13 @@ class FilamentKanbanServiceProvider extends PackageServiceProvider
         FilamentIcon::register($this->getIcons());
 
         // Handle Stubs
-        if (app()->runningInConsole()) {
-            foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
-                $this->publishes([
-                    $file->getRealPath() => base_path("stubs/filament-kanban/{$file->getFilename()}"),
-                ], 'filament-kanban-stubs');
-            }
-        }
+        // if (app()->runningInConsole()) {
+        //     foreach (app(Filesystem::class)->files(__DIR__ . '/../stubs/') as $file) {
+        //         $this->publishes([
+        //             $file->getRealPath() => base_path("stubs/filament-kanban/{$file->getFilename()}"),
+        //         ], 'filament-kanban-stubs');
+        //     }
+        // }
 
         // Testing
         Testable::mixin(new TestsFilamentKanban);
